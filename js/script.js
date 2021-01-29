@@ -62,50 +62,28 @@ ScrollReveal().reveal('.logo, .menu , .img-profile', {
   delay:500,
   opacity:0,
 });
-ScrollReveal().reveal('.hero-image-title , .btn , .hero-image-content ', {
+ScrollReveal().reveal('.hero-image-title, .hero-image-content ', {
   duration: 2000,
   delay:1500,
   opacity:0,
 });
 ScrollReveal().reveal('.services, .portfolio, .contact ', {
-  duration: 3000,
-  delay : 1300,
+  duration: 1500,
+  delay : 1000,
   distance: '300px',
 }); 
 ScrollReveal().reveal('.text-lg-right', {
   duration: 2000,
   delay: 1000,
+  opacity : 0,
   origin: 'right' ,
-  distance: '-300px',
+  distance: '-100px',
 }); 
-ScrollReveal().reveal('.text-lg-left', {
+ScrollReveal().reveal('.text-lg-left, .btn ', {
   duration: 2000,
-  delay: 3000,
+  delay: 2000,
   origin: 'right' ,
-  distance: '300px',
+  distance: '100px',
 });
 
 
-/* ********** Transition ********** */
-
-const swiper = new Swiper('.swiper-container', {
-  // Optional parameters
-  
-  loop: true,
-
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
-});
